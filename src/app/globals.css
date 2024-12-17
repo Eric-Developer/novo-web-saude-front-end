@@ -1,42 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #038C7F;
+  --secondary-color: #68D7C2;
+  --background-color: #F2E7DC;
+  --foreground-color: #333333;
+  --white-color: #FFFFFF;
+
+  --red-primary: #FF0007;
+  --red-secondary: #BD2A2E;
+  --button-hover-color: #02937A;
+  --border-color: #D9D9D9;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --font-logo: 'Anton', sans-serif;
+  --font-body: 'Roboto Condensed', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
+*{
+  font-family: var(--font-body), sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
