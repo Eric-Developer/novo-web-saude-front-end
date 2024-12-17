@@ -25,6 +25,7 @@ export async function loginService(formValues: { email: string; password: string
       return { success: false, message: "Erro desconhecido." };
     }
   } catch (error) {
-    return { success: false, message: "Erro ao conectar ao servidor. Tente novamente mais tarde." };
+    if(error instanceof Error)
+      return { success: false, message: "Erro ao conectar ao servidor. Tente novamente mais tarde." };
   }
 }
