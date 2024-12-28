@@ -132,6 +132,7 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: var(--shadow-color);
 }
 
 .section-login .login-action button:hover {
@@ -163,7 +164,7 @@
 .section-login .login-logo {
   position: absolute;
   bottom: 15px;
-  left: 45%;
+  left: 40%;
 }
 
 .section-login .login-logo h2 {
@@ -204,7 +205,6 @@
     width: 100%;
     height: 50px;
     font-size: 18px;
-    padding-left: 45px; /* Aumenta o espaço para o texto digitado */
 
   }
 
@@ -215,7 +215,7 @@
   .section-login .forgot-password {
     width: 100%;
     justify-content: flex-start;
-    margin-top: 12px;
+    margin-top: 5px;
   }
 
   .section-login .login-action {
@@ -229,6 +229,9 @@
     font-size: 18px;
   }
 
+  .login-form-container .error-message{
+    width: 100%;
+  }
   .section-login .register-link {
     width: 100%;
   }

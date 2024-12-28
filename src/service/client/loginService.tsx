@@ -20,16 +20,14 @@ export async function loginService(formValues: { email: string; password: string
     } else if (response.status === 401) {
       return { success: false, message: "Email ou senha incorretos." };
     } else if (response.status === 500) {
-      return { success: false, message: "Houve um erro. Tente novamente mais tarde." };
+      return { success: false, message: "Houve um erro no. Tente novamente mais tarde." };
     } else {
       return { success: false, message: "Erro desconhecido." };
     }
   } catch (error) {
     if(error instanceof Error)
       return { success: false, message: "Erro ao conectar ao servidor. Tente novamente mais tarde." };
-     return { success: false, message: "Erro ao conectar ao servidor. Tente novamente mais tarde." };
-
-
+     return { success: false, message: "Erro interno no servidor." };
   }
   
 }

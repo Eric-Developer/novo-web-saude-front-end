@@ -6,15 +6,14 @@
   --background-color: #F2E7DC;
   --foreground-color: #333333;
   --white-color: #FFFFFF;
-
   --red-primary: #FF0007;
   --red-secondary: #BD2A2E;
   --button-hover-color: #02937A;
   --border-color: #D9D9D9;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-
+  --shadow-color: 0px 4px 4px 0px rgba(0,0,0,0.2);
   --font-logo: 'Anton', sans-serif;
   --font-body: 'Roboto Condensed', sans-serif;
+  --button-header:#00FFCF;
 }
 
 *{
@@ -22,6 +21,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body{
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 

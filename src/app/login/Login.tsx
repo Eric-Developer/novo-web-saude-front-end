@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "@/hooks/useForm";
 import { loginService } from "@/service/client/loginService";
 import Input from "@/components/UI/Input";
+import Button from "@/components/UI/Button";
 import Link from "next/link";
 import "@/app/login/css/style.css";
 
@@ -23,7 +24,6 @@ export default function Login() {
     password: "",
   });
 
-  // Função para limpar mensagem de erro ao focar no campo
   const clearError = () => setErrorMessage("");
 
   const submitForm = async (formValues: { email: string; password: string }) => {
@@ -85,7 +85,9 @@ export default function Login() {
           </div>
 
           <div className="login-action">
-            <button type="submit" className="login-button">Entrar</button>
+            <Button type="submit" className="login-button">
+                Entrar
+            </Button>
           </div>
         </form>
 
